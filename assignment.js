@@ -45,7 +45,7 @@ console.log(language)
 
 const aCountry = 'Philippines';
 const aContinent = 'Asia';
-const aPopulation = 1200000;
+const aPopulation = 12000000;
 const aLang = "Tagalog"
 
 let half = aPopulation/2;
@@ -81,4 +81,14 @@ console.log(tempDesc)
 // minus the country's population)
 // 2. After checking the result, change the population temporarily to 13 and then to
 // 130. See the different results, and set the population back to original
+
+
+if (aPopulation > avgPop){
+    console.log(`${aCountry} population is above average`)
+} else {
+    console.log(`${aCountry} population is below average`)
+}
+
+
+
 
