@@ -1,1 +1,1 @@
-console.log(5 + 6)
+let hello = prompt("test me!:");
