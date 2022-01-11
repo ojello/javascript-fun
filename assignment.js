@@ -48,7 +48,7 @@ const aContinent = 'Asia';
 const aPopulation = 12000000;
 const aLang = "Tagalog"
 
-let half = aPopulation/2;
+let half = aPopulation / 2;
 let one = aPopulation + 1;
 console.log(one);
 let avgPop = 330000000;
@@ -61,15 +61,15 @@ let avgPop = 330000000;
 
 console.log(avgPop > aPopulation)
 
-let description = aCountry + " is in " + aContinent + " " +  aPopulation+  " " + " million people speak " + aLang
+let description = aCountry + " is in " + aContinent + " " + aPopulation + " " + " million people speak " + aLang
 
-console.log(description) 
+console.log(description)
 
 
 // LECTURE: Strings and Template Literals
 // 1. Recreate the 'description' variable from the last assignment, this time
 // using the template literal syntax
- 
+
 let tempDesc = `${aCountry} is in ${aContinent} ${aPopulation} million people speak ${aLang}`
 console.log(tempDesc)
 
@@ -83,7 +83,7 @@ console.log(tempDesc)
 // 130. See the different results, and set the population back to original
 
 
-if (aPopulation > avgPop){
+if (aPopulation > avgPop) {
     console.log(`${aCountry} population is above average`)
 } else {
     console.log(`${aCountry} population is below average`)
@@ -98,10 +98,10 @@ if (aPopulation > avgPop){
 // 5 + 6 + '4' + 9 - 4 - 2;
 // 2. Execute the operations to check if you were right
 
-console.log('9'- '5');
-console.log('19'- '13' + 17);
+console.log('9' - '5');
+console.log('19' - '13' + 17);
 console.log('123' < 57);
-console.log(5 + 6 + '4' + 9 - 4 -2)
+console.log(5 + 6 + '4' + 9 - 4 - 2)
 
 
 // LECTURE: Equality Operators: == vs. ===
@@ -123,14 +123,38 @@ console.log(5 + 6 + '4' + 9 - 4 -2)
 // 8. Reflect on why we should use the === operator and type conversion in this
 // situation
 
-let numNeighbours = prompt("How many neighbour countries does your country have?: ");
+// let numNeighbours = prompt("How many neighbour countries does your country have?: ");
 
-
+let test = prompt("how are you?: ");
 if (numNeighbours == 1) {
     console.log("Only 1 border");
-} else if(numNeighbours > 1){
+} else if (numNeighbours > 1) {
     console.log("More than 1 border");
 } else {
     console.log("No borders");
 }
+
+let langOne = "italian";
+switch (langOne) {
+    case langOne == "chinese" | "mandarin":
+        //code block
+        given = console.log("Most number of native speakers!");
+        break;
+    case langOne == "english":
+        //code block
+        given = console.log("3rd place");
+        break;
+    case langOne == "hindi":
+        //code block
+        given = console.log("number 4");
+        break;
+    case langOne == "arabic":
+        given = console.log("5th most spoken language");
+        break;
+    default:
+        //code block
+        given = console.log("Great language too :D");
+}
+
+
 

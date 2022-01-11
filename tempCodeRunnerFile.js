@@ -1,1 +1,0 @@
-let hello = prompt("test me!:");
