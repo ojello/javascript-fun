@@ -87,8 +87,5 @@ const describePopulation = function(country, population) {
 };
 
 describePopulation("asia", 1200);
-// const percentageOfWorld2 = function(country, population){
-//     let percentage = population/7900 * 100;
-//     let cPop = `${country} has ${population} million people so it's about ${percentage}% of the world population`
-//     return cPop;
-// };
+
+
