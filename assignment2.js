@@ -43,9 +43,14 @@ const china = percentageOfWorld1("China", 450)
 
 // Function Expression - React version ** Preferred Method
 const percentageOfWorld2 = function(country, population){
-
+    let percentage = population/7900 * 100;
+    let cPop = `${country} has ${population} million people so it's about ${percentage}% of the world population`
+    return cPop;
 };
 
+
+const taiwan = percentageOfWorld2("taiwan", 400);
+console.log(taiwan);
 
 
 
