@@ -136,3 +136,15 @@ neighbourArray.splice(3, 0 , "Sweden");
 
 neighbourArray.splice(0, 1, "Philippines");
 console.log(neighbourArray);
+
+// LECTURE: Introduction to Objects
+// 1. Createanobjectcalled'myCountry'foracountryofyourchoice,containing properties 'country', 'capital', 'language', 'population' and 'neighbours' (an array like we used in previous assignments)
+
+let myCountry = {
+    country: "Philippines",
+    capital: "Manila",
+    language:"Tagalog",
+    population: 100,
+    neighbours: ["japan" ,"korea" ,"taiwan"],
+}
+
