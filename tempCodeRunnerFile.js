@@ -1,14 +1,5 @@
-
-
-function getFee(isSenior) {
-    return (isSenior ? '5.00' : '25.00');
+function describeCountry(country, population, capitalCity){
+    console.log(`${country} has ${population} people and its capital city is ${capitalCity}`)
 }
-
-console.log(getFee(true));
-// expected output: 5.00
-
-console.log(getFee(false));
-// expected output: 25.00
-
-console.log(getFee(null));
-// expected output: 26.00
+describeCountry("Finland",6000000, "Helsinki")
+describeCountry("Brazil", 1000000, "Sao Paolo")

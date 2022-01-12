@@ -6,3 +6,13 @@
 // 2. Call this function 3 times, with input data for 3 different countries. Store the
 // returned values in 3 different variables, and log them to the console
 
+
+// let country;
+// let population;
+// let capitalCity = "Helsinki";
+function describeCountry(country, population, capitalCity){
+    console.log(`${country} has ${population} people and its capital city is ${capitalCity}`)
+}
+describeCountry("Finland",6000000, "Helsinki")
+describeCountry("Brazil", 1000000, "Sao Paolo")
+
