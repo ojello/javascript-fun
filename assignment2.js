@@ -148,3 +148,12 @@ let myCountry = {
     neighbours: ["japan" ,"korea" ,"taiwan"],
 }
 
+// LECTURE: Dot vs. Bracket Notation
+// 1. Usingtheobjectfromthepreviousassignment,logastringlikethistothe console: 'Finland has 6 million finnish-speaking people, 3 neighbouring countries and a capital called Helsinki.'
+// 2. Increasethecountry'spopulationbytwomillionusingdotnotation,andthen decrease it by two million using brackets notation.
+
+console.log(myCountry);
+
+let myCountryString = `${myCountry.country} has ${myCountry.population} million ${myCountry.language} speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}`
+
+console.log(myCountryString)
