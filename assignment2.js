@@ -5,8 +5,6 @@
 // capital city is Helsinki'
 // 2. Call this function 3 times, with input data for 3 different countries. Store the
 // returned values in 3 different variables, and log them to the console
-
-
 // let country;
 // let population;
 // let capitalCity = "Helsinki";
@@ -15,7 +13,6 @@ function describeCountry(country, population, capitalCity){
 }
 const finland = describeCountry("Finland",6000000, "Helsinki")
 const brazil = describeCountry("Brazil", 1000000, "Sao Paolo")
-
 
 // LECTURE: Function Declarations vs. Expressions
 // 1. The world population is 7900 million people. Create a function declaration
@@ -78,9 +75,8 @@ console.log(japan);
  // 2. To calculate the percentage, 'describePopulation' call the
 // 'percentageOfWorld1' you created earlier
 // 3. Call 'describePopulation' with data for 3 countries of your choice
-
-
-function percentageOfWorld5(population) {
+function percentageOfWorld5(population) 
+{
     return (population/7900) * 100;
 }
 
