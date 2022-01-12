@@ -153,7 +153,13 @@ let myCountry = {
 // 2. Increasethecountry'spopulationbytwomillionusingdotnotation,andthen decrease it by two million using brackets notation.
 
 console.log(myCountry);
+myCountry.population = myCountry.population + 2;
+console.log(myCountry.population);
+
+myCountry['population'] -=2;
+console.log(myCountry.population);
 
 let myCountryString = `${myCountry.country} has ${myCountry.population} million ${myCountry.language} speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}`
+
 
 console.log(myCountryString)
