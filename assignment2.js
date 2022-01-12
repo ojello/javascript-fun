@@ -67,4 +67,14 @@ console.log(japan);
 // 'percentageOfWorld1' you created earlier
 // 3. Call 'describePopulation' with data for 3 countries of your choice
 
+// Arrow Function
+ let percentageOfWorld3 = (country, population) => {
+     let percentage = population/7900 * 100;
+     let pop = `${country} has ${population} million people so it's about ${percentage}% of the world population`
+     return pop;
 
+ };
+
+ const america = percentageOfWorld3("America", 200)
+ 
+ console.log(america)
