@@ -98,9 +98,41 @@ describePopulation("asia", 1200);
 
 let populations = [4400, 1200, 134,  24];
 
-populations === 4;
+console.log(populations.length === 4);
 
 let percentages = [percentageOfWorld5(populations[0]),percentageOfWorld5(populations[1]), percentageOfWorld5(populations[2]), percentageOfWorld5(populations[3])];
 
 console.log(percentages)
 
+
+// LECTURE: Basic Array Operations (Methods)
+// 1. Createan array containing all the neighbouring countries of a country of your choice. Choose a country which has at least 2 or 3 neighbours. Store the array into a variable called 'neighbours'
+// 2. Atsomepoint,anewcountrycalled'Utopia'iscreatedintheneighbourhoodof your selected country. So add it to the end of the 'neighbours' array
+// 3. Unfortunately,aftersometime,thenewcountryisdissolved.Soremoveitfrom the end of the array
+// 4. Ifthe'neighbours'arraydoesnotincludethecountry‘Germany’,logtothe console: 'Probably not a central European country :D'
+// 5. Changethenameofoneofyourneighbouringcountries.Todothat,findthe index of the country in the 'neighbours' array, and then use that index to change the array at that index position. For example, you can search for 'Sweden' in the array, and then replace it with 'Republic of Sweden'.
+
+let neighbourArray = ["china", "japan", "korea"];
+
+// adding a new country, "Utopia" to add to end of neighbours array
+
+neighbourArray.push("Utopia")
+
+console.log(neighbourArray.length);
+
+// removing new country, "Utopia" - last element
+
+neighbourArray.pop();
+
+console.log(neighbourArray)
+
+if (neighbourArray != "Germany"){
+    const statement = "probably not a central European country :D";
+    console.log(statement);
+}
+
+
+neighbourArray.splice(3, 0 , "Sweden");
+
+neighbourArray.splice(0, 1, "Philippines");
+console.log(neighbourArray);
