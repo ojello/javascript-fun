@@ -1,6 +1,6 @@
 
 
-const container = document.querySelector(".container");
+const container = document.querySelector("#container");
 
 // create new div and store it into container
 const content = document.createElement('div');
@@ -42,3 +42,28 @@ h3.textContent = "I'm a blue h3!";
 document.body.append(h3);
 
 
+// a <div> with a black border and pink background color with the following elements inside of it:
+// another <h1> that says “I’m in a div”
+// a <p> that says “ME TOO!”
+// Hint for this one: after creating the <div> with createElement, append the <h1> and <p> to it before adding it to the container.
+const newDiv = document.createElement("div");
+
+// make border black and color pink
+newDiv.setAttribute("style", "color: pink; border: thick solid black")
+
+
+const h1 = document.createElement("h1");
+h1.textContent ="Hello";
+
+// apending h1 to newDiv
+newDiv.appendChild(h1);
+
+
+const p2  = document.createElement("p");
+p2.textContent = "Me tOO";
+
+// appending p2 to newDiv
+newDiv.appendChild(p2);
+
+// then appending newDiv to the body so it shows up.
+document.body.appendChild(newDiv);
