@@ -67,3 +67,33 @@ newDiv.appendChild(p2);
 
 // then appending newDiv to the body so it shows up.
 document.body.appendChild(newDiv);
+
+
+// btn
+
+// creating button
+const btn = document.createElement("button");
+
+btn.textContent ="Click me";
+
+// appending btn to body
+document.body.appendChild(btn);
+
+// adding an EventListener to the button so when clicked, it will alert the User
+btn.addEventListener('click', () =>{
+    alert("You have clicked the button :P");
+})
+
+
+// creating blue btn
+
+const blueBtn = document.createElement("button");
+
+blueBtn.textContent = "Blue button!";
+
+// appending blue button to body
+document.body.appendChild(blueBtn);
+
+blueBtn.addEventListener('click', function(e){
+    e.target.style.background = "blue";
+});
